@@ -51,3 +51,21 @@ CYPRESS_password=<LOGIN_PASSWORD> npx cypress run --e2e --browser <BROWSER>
 - `<LOGIN_PASSWORD>` is the global user password required to login to the application - eg. `CYPRESS_password=user_password`
 - `--e2e` specifies end to end testing type and is optional
 - `--browser <BROWSER>` specifies broser type and is optional - for example to run with the chrome browser use `--browser chrome`
+
+## Running Cypress tests with visual testing
+
+* For visual testing [Cypress Percy plugin](https://docs.percy.io/docs/cypress) is being used
+
+* To run cypress tests in headless mode with visual testing `PERCY_TOKEN` environment variable must be set
+
+```
+On Unix:
+export PERCY_TOKEN=dda2541daec785abe7a65a91c6c9167d67cf901578a9bf84677dd6e3b0a6739f
+```
+
+* run command:
+```
+CYPRESS_password=<LOGIN_PASSWORD> npx percy exec -- cypress run --browser <BROWSER>
+```
+
+* Snapshots will be stored and compared on Percy.io page under [cypress-task](https://percy.io/2b464f5b/cypress-task) project to which access can be provided on demand by the authot of this readme
