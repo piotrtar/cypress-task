@@ -12,7 +12,8 @@
         ],
         "types": [
             "cypress",
-            "node"
+            "node",
+            "@percy/cypress"
         ]
     },
     "include": [

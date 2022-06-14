@@ -35,5 +35,5 @@ describe('resolutions', () => {
 			cy.viewport(size[0], size[1]);
 			orderTest(USERNAME, password);
 		});
-	})
-})
+	});
+});

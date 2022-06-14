@@ -16,9 +16,10 @@ export const loginTest = (username: string, password: string) => {
 	}).click();
 
 	cy.location("pathname").should('contain', '/inventory.html');
+	cy.percySnapshot();
 
 	cy.getCookies().then((cookies) => {
-		expect(cookies[0]).to.have.property('name', 'session-username')
-		expect(cookies[0]).to.have.property('value', username)
-	})
+		expect(cookies[0]).to.have.property('name', 'session-username');
+		expect(cookies[0]).to.have.property('value', username);
+	});
 }
