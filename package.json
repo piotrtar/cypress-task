@@ -1,0 +1,30 @@
+{
+    "name": "cypress-task",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {},
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/piotrtar/cypress-task.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/piotrtar/cypress-task/issues"
+    },
+    "homepage": "https://github.com/piotrtar/cypress-task#readme",
+    "engines": {
+        "npm": ">=7.0.0",
+        "node": ">=16.0.0"
+    },
+    "dependencies": {
+        "dotenv": "^16.0.0",
+        "custom-env": "^2.0.1"
+    },
+    "devDependencies": {
+        "cypress": "^10.1.0",
+        "typescript": "^4.7.3"
+    }
+}
