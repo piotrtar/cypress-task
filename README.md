@@ -37,7 +37,7 @@ npm install
 * To open cypress test runner run the command:
 
 ```
-CYPRESS_password={LOGIN_PASSWORD} npx cypress open --e2e --browser {BROWSER} 
+CYPRESS_password=<LOGIN_PASSWORD> npx cypress open --e2e --browser <BROWSER>
 ```
 
 ## Running Cypress tests
@@ -45,9 +45,9 @@ CYPRESS_password={LOGIN_PASSWORD} npx cypress open --e2e --browser {BROWSER}
 * To run cypress tests in headless mode run the command:
 
 ```
-CYPRESS_password={LOGIN_PASSWORD} npx cypress run --e2e --browser {BROWSER}
+CYPRESS_password=<LOGIN_PASSWORD> npx cypress run --e2e --browser <BROWSER>
 ```
 * Where :
-- `{LOGIN_PASSWORD}` is the global user password required to login to the application - eg. `CYPRESS_password=user_password`
+- `<LOGIN_PASSWORD>` is the global user password required to login to the application - eg. `CYPRESS_password=user_password`
 - `--e2e` specifies end to end testing type and is optional
-- `--browser {BROWSER}` specifies broser type and is optional - for example to run with the chrome browser use `--browser chrome`
+- `--browser <BROWSER>` specifies broser type and is optional - for example to run with the chrome browser use `--browser chrome`
